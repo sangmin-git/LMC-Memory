@@ -8,7 +8,7 @@
 This repository contains the PyTorch implementation of the following paper:
 > <i>Video Prediction Recalling Long-term Motion Context via Memory Alignment Learning </i> **(CVPR 2021 Oral)**<br>
 > Sangmin Lee, Hak Gu Kim, Dae Hwi Choi, Hyung-Il Kim, and Yong Man Ro<br>
-> Paper: https://arxiv.org/abs/xx<br>
+> Paper: https://arxiv.org/abs/2104.00924<br>
 
 
 Source code will be released.
