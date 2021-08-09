@@ -29,7 +29,7 @@ class MovingMNIST(Dataset):
         self.clips = []
         for video_i in range(len(self.frame_path)):
             video_frame_num = len(self.frame_path[video_i])
-            self.clips += [(video_i, t) for t in range(video_frame_num - seq_len)] if train \
+            self.clips += [(video_i, t) for t in range(video_frame_num - seq_len + 1)] if train \
                 else [(video_i, t * seq_len) for t in range(video_frame_num // seq_len)]
 
     def __getitem__(self, idx):
@@ -55,7 +55,7 @@ class KTH(Dataset):
         self.clips = []
         for video_i in range(len(self.frame_path)):
             video_frame_num = len(self.frame_path[video_i])
-            self.clips += [(video_i, t) for t in range(video_frame_num - seq_len)] if train \
+            self.clips += [(video_i, t) for t in range(video_frame_num - seq_len + 1)] if train \
                 else [(video_i, t * seq_len) for t in range(video_frame_num // seq_len)]
 
     def __getitem__(self, idx):
